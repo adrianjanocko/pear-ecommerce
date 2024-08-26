@@ -1,0 +1,11 @@
+@mixin buttonHoverEffect($color: null) {
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    @if $color {
+      color: $color;
+    } @else {
+      @apply text-slate-600;
+    }
+  }
+}

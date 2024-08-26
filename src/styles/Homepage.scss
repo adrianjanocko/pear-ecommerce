@@ -1,0 +1,90 @@
+/*
+
+- Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+ 62 / 74 / 86 / 98
+
+- Spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import "mixins.scss";
+
+.homepage {
+  .products {
+    &--heading {
+      @apply font-bold;
+      font-size: 2rem;
+
+      @apply mb-10;
+    }
+
+    &--list {
+      @apply grid grid-cols-4 gap-4;
+      row-gap: 1.2rem;
+
+      &_item {
+        @apply text-center;
+        @apply py-12 px-10;
+        @apply border-2 rounded-xl border-slate-200;
+
+        @apply relative;
+
+        &-favourite {
+          @apply absolute;
+          right: 3rem;
+          top: 2rem;
+
+          &-icon {
+            @apply w-8 h-8;
+          }
+        }
+
+        &-recommended {
+          @apply absolute top-0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          @apply w-max m-auto;
+          @apply flex gap-2 items-center;
+          @apply py-1 px-4 rounded-md;
+
+          &-icon {
+            @apply w-4 h-4;
+          }
+
+          @apply text-white font-bold bg-red-600;
+          font-size: 1.4rem;
+        }
+
+        &-image {
+          @apply m-auto w-40;
+
+          @apply mb-5;
+        }
+
+        &-name {
+          @apply inline-block font-bold underline;
+          font-size: 1.6rem;
+
+          @include buttonHoverEffect(#527dda);
+
+          @apply mb-4;
+        }
+
+        &-price {
+          @apply font-bold;
+          font-size: 2rem;
+          @apply flex justify-between items-center;
+
+          &-stock {
+            @apply text-green-600 text-center font-bold;
+            font-size: 1.2rem;
+          }
+
+          @apply mb-8;
+        }
+      }
+    }
+  }
+}

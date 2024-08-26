@@ -1,0 +1,75 @@
+/*
+
+- Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+ 62 / 74 / 86 / 98
+
+- Spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import "mixins.scss";
+
+.footer {
+  font-size: 1.6rem;
+  @apply grid gap-20 grid-cols-2;
+  @apply py-8;
+
+  &--left {
+    &_flex {
+      @apply flex gap-6 items-center;
+
+      &-logo {
+        width: 9rem;
+      }
+
+      &-language {
+        &-icon {
+          @apply h-6;
+        }
+
+        &-active {
+          @apply text-green-500;
+        }
+      }
+
+      @apply mb-8;
+    }
+
+    &_description {
+      @apply font-normal;
+
+      @apply mb-10;
+    }
+
+    &_copyright {
+      @apply text-slate-500;
+    }
+  }
+
+  &--right {
+    @apply flex gap-16;
+
+    &_header {
+      @apply inline-block;
+
+      @apply mb-6;
+    }
+
+    &_items {
+      &-item {
+        @include buttonHoverEffect();
+        @apply mb-1;
+
+        .active {
+          @apply text-green-500;
+        }
+
+        a {
+          @apply flex items-center gap-2;
+        }
+      }
+    }
+  }
+}

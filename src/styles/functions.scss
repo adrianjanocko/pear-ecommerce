@@ -1,0 +1,41 @@
+@import "mixins.scss";
+
+.modal {
+  @apply flex flex-col items-center;
+
+  &--out {
+    @apply flex gap-3 items-center;
+  }
+
+  &--modal {
+    @apply mt-8;
+    font-size: 1.6rem;
+    position: fixed;
+    @apply p-5 px-8;
+    @apply bg-white drop-shadow-2xl rounded-xl;
+    border: 2px solid rgba(0, 0, 0, 20%);
+  }
+}
+
+.cart-button {
+  font-size: 1.4rem;
+  @apply text-white py-2 rounded-lg;
+  background-color: #527dda;
+  color: white;
+  border: 2px solid transparent;
+  @apply flex items-center gap-2 w-full justify-center;
+
+  @include buttonHoverEffect(white);
+
+  &:hover {
+    border: 2px solid #52699c !important;
+  }
+
+  &.green {
+    background-color: #4dc295 !important;
+
+    &:hover {
+      border: 2px solid #58aa8b !important;
+    }
+  }
+}

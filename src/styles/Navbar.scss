@@ -1,0 +1,98 @@
+/*
+
+- Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+ 62 / 74 / 86 / 98
+
+- Spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+.navbar {
+  font-size: 1.6rem;
+
+  &--discount {
+    @apply py-6;
+    @apply bg-red-100;
+    @apply text-center;
+  }
+
+  .container {
+    @apply flex items-center justify-between;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+
+    &--left,
+    &--right {
+      @apply flex gap-10 items-center;
+    }
+
+    &--left {
+      &_logo {
+        max-width: 10rem;
+      }
+
+      &_list {
+        @apply flex gap-8;
+
+        &-item {
+          button,
+          .button {
+            @apply flex gap-3 items-center;
+          }
+
+          &-icon {
+            @apply w-6 h-6;
+          }
+
+          @apply relative;
+
+          &-active {
+            @apply absolute;
+            top: 50px;
+            @apply w-full;
+            @apply h-px;
+            @apply bg-black;
+          }
+        }
+      }
+    }
+
+    &--right {
+      &_item {
+        &-icon {
+          @apply w-8 h-8;
+        }
+
+        &-products {
+          @apply grid gap-8;
+
+          &-product {
+            @apply flex gap-5;
+
+            img {
+              max-width: 5rem;
+            }
+
+            &-info {
+              @apply grid items-center;
+
+              &-name {
+                @apply font-bold;
+              }
+            }
+          }
+
+          &-button {
+            font-size: 1.4rem;
+            @apply text-white py-2 rounded-lg;
+            background-color: #527dda;
+            border: 2px solid transparent;
+            @apply flex items-center gap-2 w-full justify-center;
+          }
+        }
+      }
+    }
+  }
+}

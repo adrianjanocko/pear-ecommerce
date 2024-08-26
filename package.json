@@ -1,0 +1,34 @@
+{
+  "name": "vite-styled-tailwindcss",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@supabase/supabase-js": "^2.39.0",
+    "framer-motion": "^10.16.16",
+    "iso-639-1": "^3.1.0",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "sass": "^1.69.5",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.1",
+    "@types/node": "^20.9.0",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15",
+    "@vitejs/plugin-react": "4.1.1",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.31",
+    "ts-node": "^10.9.1",
+    "typescript": "5.2.2",
+    "vite": "^4.5.2"
+  }
+}

@@ -1,0 +1,39 @@
+/*
+
+- Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 /
+ 62 / 74 / 86 / 98
+
+- Spacing system (px)
+ 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    min-width: 25rem;
+    max-width: 35rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &--info {
+    @apply flex flex-col gap-8;
+
+    h1 {
+      font-size: 3.2rem;
+      @apply font-bold;
+    }
+
+    p {
+      @apply text-gray-600;
+    }
+
+    .cart-button {
+      max-width: 25rem;
+    }
+  }
+}

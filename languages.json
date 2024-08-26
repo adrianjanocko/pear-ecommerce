@@ -1,0 +1,60 @@
+{
+  "sk": {
+    "discount": "🔥 Tu sa môže nachádzať <strong>akýkoľvek</strong> text. Je možné ho konfigurovať v languages.json. 🔥",
+    "navbar": {
+      "phones": "Telefóny",
+      "tablets": "Tablety",
+      "watches": "Hodinky"
+    },
+    "home": {
+      "products": {
+        "header": "Produkty",
+        "recommended": "Odporúčané",
+        "in_stock": "na sklade"
+      }
+    },
+    "footer": {
+      "description": "Vstúpte do sveta Pear, kde sa elegancia stretáva s výkonom. Naša kolekcia produktov spojuje špičkový dizajn s pokročilou technológiou, vytvárajúc nezameniteľný zážitok pre milovníkov krásy a inteligentnej elektroniky.",
+      "subpages": {
+        "header": "Podstránky",
+        "links": {
+          "home": "Domov",
+          "favourites": "Obľúbené",
+          "cart": "Košík"
+        },
+        "socials": {
+          "header": "Sociálne siete"
+        }
+      }
+    }
+  },
+  "en": {
+    "discount": "🔥 <strong>Any</strong> text can be here. It can be configured in languages.json. 🔥",
+    "navbar": {
+      "phones": "Phones",
+      "tablets": "Tablets",
+      "watches": "Watches"
+    },
+    "home": {
+      "products": {
+        "header": "Products",
+        "recommended": "Recommended",
+        "in_stock": "in stock"
+      }
+    },
+    "footer": {
+      "description": "Enter the world of Pear, where elegance meets performance. Our product collection combines cutting-edge design with advanced technology, creating an unmistakable experience for beauty and smart electronics enthusiasts.",
+      "subpages": {
+        "header": "Subpages",
+        "links": {
+          "home": "Home",
+          "favourites": "Favourites",
+          "cart": "Cart"
+        },
+        "socials": {
+          "header": "Social Networks"
+        }
+      }
+    }
+  }
+}
