@@ -1,4 +1,4 @@
-Pear is a demo e-commerce website created as the capstone project for my studies. This project showcases a clean, responsive, and user-friendly design, allowing users to browse and purchase electronics. Built with React, Tailwind CSS, SCSS, and Supabase, Pear demonstrates a streamlined shopping experience with a modern tech stack.
+Pear is a demo e-commerce website created as the capstone project for my studies. This project showcases a clean, responsive, and user-friendly design, allowing users to browse and purchase electronics. Built with React, TailwindCSS, SCSS, and Supabase, Pear demonstrates a streamlined shopping experience with a modern tech stack.
 
 ## Features
 
